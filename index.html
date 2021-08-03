@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc Figures | Js practice course</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h2>Do you hate geometry?</h2>
+        <br />
+        <h3>Let me help you with that</h3>
+      </div>
+    </header>
+
+    <section>
+      <div>
+        <h3>What do you wanna calc?</h3>
+        <div>
+          <div>
+            <a> Square </a>
+          </div>
+          <div>
+            <a> Triangle </a>
+          </div>
+          <div>
+            <a> Circle </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="square__container">
+      <label for="SquareInput">Square</label>
+      <form>
+        <h3>How long is each side?</h3>
+        <input type="number" id="SquareInput" />
+        <button type="button" onclick="calcSquareArea()">Get area</button>
+        <button type="button" onclick="calcSquarePerimeter()">
+          Get perimeter
+        </button>
+      </form>
+    </section>
+
+    <section class="circle__container">
+      <label for="CircleInput">Circle</label>
+      <form>
+        <h3>How long is the radio?</h3>
+        <input type="number" id="CircleInput" />
+        <button type="button" onclick="calcCircleArea()">Get area</button>
+        <button type="button" onclick="calcCirclePerimeter()">
+          Get perimeter
+        </button>
+      </form>
+    </section>
+
+    <section class="triangle__container">
+      <label for="TriangleInputSide1">Triangle</label>
+      <form>
+        <h3>How long is each side?</h3>
+        <input type="number" id="TriangleInputSide1" />
+        <input type="number" id="TriangleInputSide2" />
+        <input type="number" id="TriangleInputBase" />
+        <input type="number" id="TriangleInputHeigth" />
+        <button type="button" onclick="calcTriangleArea()">Get area</button>
+        <button type="button" onclick="calcTrianglePerimeter()">
+          Get perimeter
+        </button>
+        <button type="button" onclick="caclTriangleHeight()">Get Height</button>
+      </form>
+    </section>
+
+    <script src="./figures.js"></script>
+  </body>
+</html>
