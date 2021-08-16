@@ -18,19 +18,20 @@ function areaTriangulo(base, altura) {
   return (base * altura) / 2;
 }
 
+function calcPitagoras(a, c) {
+  const resultPitagoras = Math.sqrt(a * a - ((c / 2) * c) / 2);
+  return resultPitagoras;
+}
+
 function alturaTriangulo(a, b, c) {
-  if (a == b) {
-    if (b !== c) {
-      alert("Its isosceless");
-    } else {
-      alert("Its not isosceless");
-    }
-  } else if (b !== c) {
-    alert("Its not isosceless");
+  if (a == b && a !== c) {
+    const height = calcPitagoras(a, c);
+    alert(`Its isosceless and its height is ${height}`);
   } else {
-    alert("Its isosceless");
+    alert("Its not isosceless");
   }
 }
+
 //Círculo
 
 function diametroCirculo(radio) {
