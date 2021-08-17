@@ -7,6 +7,32 @@
     <title>Calc Discounts | Js practice course</title>
   </head>
   <body>
+    <header>
+      <h2>Is hard for you to buy on line?</h2>
+      <h3>let me help you with this price and discounts calculator</h3>
+    </header>
+
+    <section>
+      <form>
+        <h3>Calc your products prices after the apply a discount</h3>
+        <div>
+          <label for="InputPrice"> What is your product's price? </label>
+          <input type="number" id="InputPrice" />
+        </div>
+        <div>
+          <label for="InputDiscount"> How much is your discount %? </label>
+          <input type="number" id="InputDiscount" />
+        </div>
+        <div>
+          <label for=InputCoupon""> Do you have any coupon? </label>
+          <input type="text" id="InputCoupon" />
+        </div>
+        <button type="button" onclick="actDiscountCalculator()">
+          Calc total price
+        </button>
+        <h3 id="ShowPrice"></h3>
+      </form>
+    </section>
     <script src="./discounts.js"></script>
   </body>
 </html>
